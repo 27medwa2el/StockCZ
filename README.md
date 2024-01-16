@@ -7,6 +7,7 @@
 - [Technologies Used](#technologies-used)
 - [Deployment](#deployment)
 - [Repository Design Pattern](#repository-design-pattern)
+- [Project Link](#project-link)
 
 ## Overview
 
@@ -50,3 +51,7 @@ The project is deployed on [Somee Hosting](https://somee.com/) for easy access a
 ## Repository Design Pattern
 
 The codebase follows the Repository Design Pattern to enhance maintainability and separation of concerns. The pattern is implemented to provide a clean and organized structure for database operations, promoting code reusability and testability.
+
+## Project Link
+
+Access the project [here](http://www.stockcz.somee.com/).
