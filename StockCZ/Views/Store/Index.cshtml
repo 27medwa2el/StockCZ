@@ -1,0 +1,33 @@
+﻿@model List<StockCZ.Models.Domain.Store>
+
+<h2 class="mb-4">Store Index</h2>
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">Create New</a>
+</p>
+
+<div class="table-responsive">
+    <table class="table table-striped table-bordered">
+        <thead>
+            <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Name</th>
+                <th scope="col">Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.BaseId</td>
+                    <td>@item.Name</td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.BaseId" class="btn btn-sm btn-primary">Edit</a>
+                        <a asp-action="Details" asp-route-id="@item.BaseId" class="btn btn-sm btn-info">Details</a>
+                        <a asp-action="Delete" asp-route-id="@item.BaseId" class="btn btn-sm btn-danger">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

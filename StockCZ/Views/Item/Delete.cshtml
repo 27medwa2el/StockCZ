@@ -1,0 +1,33 @@
+﻿@model StockCZ.Models.Domain.Item
+
+<h2 class="mb-4">Delete</h2>
+
+<h3 class="mb-4">Are you sure you want to delete this?</h3>
+<div class="card">
+    <div class="card-body">
+        <h4 class="card-title">Item</h4>
+        <hr />
+        <dl class="row">
+            <dt class="col-sm-3">
+                @Html.DisplayNameFor(model => model.Name)
+            </dt>
+            <dd class="col-sm-9">
+                @Html.DisplayFor(model => model.Name)
+            </dd>
+            <dt class="col-sm-3">
+                @Html.DisplayNameFor(model => model.Price)
+            </dt>
+            <dd class="col-sm-9">
+                @Html.DisplayFor(model => model.Price)
+            </dd>
+        </dl>
+
+        <form asp-action="Delete">
+            <input type="hidden" asp-for="BaseId" />
+            <div class="mt-4">
+                <button type="submit" class="btn btn-danger">Delete</button>
+                <a asp-action="Index" class="btn btn-dark">Back to List</a>
+            </div>
+        </form>
+    </div>
+</div>
